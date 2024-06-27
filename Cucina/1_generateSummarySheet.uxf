@@ -1,0 +1,50 @@
+<diagram program="umletino" version="15.1"><zoom_level>6</zoom_level><help_text>Space for diagram notes</help_text><element><id>Relation</id><coordinates><x>114</x><y>36</y><w>18</w><h>498</h></coordinates><panel_attributes>lt=.
+group=group-2</panel_attributes><additional_attributes>10;10;10;810</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>102</x><y>0</y><w>54</w><h>42</h></coordinates><panel_attributes>UI</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>114</x><y>54</y><w>186</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+generateSummarySheet (service)</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>204</x><y>12</y><w>174</w><h>30</h></coordinates><panel_attributes>kitchenTaskMgr:
+KitchenTaskManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>36</y><w>18</w><h>498</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;810</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>288</x><y>60</y><w>12</w><h>450</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>396</x><y>12</y><w>168</w><h>30</h></coordinates><panel_attributes>userMgr:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>474</x><y>36</y><w>18</w><h>108</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>474</x><y>78</y><w>12</w><h>12</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>294</x><y>66</y><w>192</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getCurrentUser( )</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>294</x><y>78</y><w>192</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+user</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>0</x><y>102</y><w>858</w><h>420</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+--
+
+
+-.
+
+
+
+
+-.
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>114</x><y>108</y><w>186</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+throw UnauthorizedException</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Text</id><coordinates><x>18</x><y>150</y><w>96</w><h>12</h></coordinates><panel_attributes>fg=#761C8C
+[service.getMenu() == null]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>114</x><y>144</y><w>186</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Text</id><coordinates><x>18</x><y>102</y><w>108</w><h>24</h></coordinates><panel_attributes>fg=#761C8C
+[!user.isChef() || 
+!service.isChefAssigned(user)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>294</x><y>180</y><w>216</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create(menuRecipes = service.getMenu().
+getAllCookingProcedures())</panel_attributes><additional_attributes>340;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>498</x><y>180</y><w>84</w><h>30</h></coordinates><panel_attributes>sheet: SummarySheet</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>534</x><y>204</y><w>18</w><h>174</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;270</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>534</x><y>216</y><w>12</w><h>126</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>294</y><w>114</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>642</x><y>294</y><w>126</w><h>24</h></coordinates><panel_attributes>listedTaks:
+ArrayList&lt;Task&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>114</x><y>498</y><w>186</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+sheet</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Relation</id><coordinates><x>294</x><y>354</y><w>150</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setCurrentSummarySheet(sheet)</panel_attributes><additional_attributes>10;60;50;60;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>36</y><w>18</w><h>498</h></coordinates><panel_attributes>lt=.
+</panel_attributes><additional_attributes>10;10;10;810</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>726</x><y>12</y><w>114</w><h>30</h></coordinates><panel_attributes>er:
+MenuEventReceiver
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>216</x><y>450</y><w>588</w><h>42</h></coordinates><panel_attributes>for each
+er in 
+eventReceivers
+fg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>294</x><y>432</y><w>12</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>780</x><y>468</y><w>12</w><h>12</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>456</y><w>492</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+updateSummarySheetCreated(sheet)</panel_attributes><additional_attributes>800;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>294</x><y>396</y><w>144</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+notifySummarySheetCreated()</panel_attributes><additional_attributes>20;60;50;60;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>234</y><w>114</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create(menuRecipes)</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>642</x><y>234</y><w>126</w><h>24</h></coordinates><panel_attributes>listedProcedures:
+ArrayList&lt;CookingProcedures&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>294</x><y>330</y><w>252</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+sheet</panel_attributes><additional_attributes>10;20;400;20</additional_attributes></element></diagram>

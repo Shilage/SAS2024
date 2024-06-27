@@ -1,0 +1,27 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram note</help_text><element><id>UMLPackage</id><coordinates><x>135</x><y>81</y><w>81</w><h>63</h></coordinates><panel_attributes>UI</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>288</x><y>99</y><w>261</w><h>45</h></coordinates><panel_attributes>kitchenTaskMgr:
+KitchenTaskManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>162</y><w>279</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+checkShiftBoard()</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>414</x><y>180</y><w>18</w><h>180</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>135</y><w>27</w><h>279</h></coordinates><panel_attributes>lt=.
+group=group-0</panel_attributes><additional_attributes>10;10;10;290</additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>135</y><w>27</w><h>279</h></coordinates><panel_attributes>lt=.
+group=group-1</panel_attributes><additional_attributes>10;10;10;290</additional_attributes></element><element><id>Relation</id><coordinates><x>423</x><y>288</y><w>270</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getShiftsFromService (service)</panel_attributes><additional_attributes>280;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>585</x><y>99</y><w>207</w><h>45</h></coordinates><panel_attributes>shiftBoardMgr:
+ShiftBoardManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>675</x><y>135</y><w>27</w><h>270</h></coordinates><panel_attributes>lt=.
+group=group-2</panel_attributes><additional_attributes>10;10;10;280</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>675</x><y>306</y><w>18</w><h>27</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>423</x><y>315</y><w>270</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+shifts</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>342</y><w>279</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+shifts</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>486</x><y>36</y><w>153</w><h>45</h></coordinates><panel_attributes>userMgr:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>558</x><y>72</y><w>27</w><h>198</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>423</x><y>180</y><w>153</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getCurrentUser( )</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>423</x><y>198</y><w>153</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+user</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>558</x><y>198</y><w>18</w><h>18</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>0</x><y>234</y><w>720</w><h>144</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+--
+
+
+-.
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>9</x><y>252</y><w>162</w><h>36</h></coordinates><panel_attributes>fg=#761C8C
+[!user.isChef() || 
+!service.isChefAssigned(user)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>243</y><w>279</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+throw UnauthorizedException</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element></diagram>

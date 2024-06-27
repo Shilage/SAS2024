@@ -1,0 +1,21 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>Relation</id><coordinates><x>316</x><y>152</y><w>24</w><h>312</h></coordinates><panel_attributes>lt=.
+group=group-0</panel_attributes><additional_attributes>10;10;10;370</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>300</x><y>104</y><w>72</w><h>56</h></coordinates><panel_attributes>UI</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>316</x><y>176</y><w>248</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+openSummarySheet (service)</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>436</x><y>120</y><w>232</w><h>40</h></coordinates><panel_attributes>kitchenTaskMgr:
+KitchenTaskManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>548</x><y>152</y><w>24</w><h>312</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;370</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>548</x><y>184</y><w>16</w><h>232</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>692</x><y>120</y><w>224</w><h>40</h></coordinates><panel_attributes>userMgr:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>796</x><y>152</y><w>24</w><h>320</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;380</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>796</x><y>208</y><w>16</w><h>16</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>556</x><y>192</y><w>256</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getCurrentUser( )</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>556</x><y>208</y><w>256</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+user</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>156</x><y>240</y><w>680</w><h>200</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+[!user.isChef() || 
+!service.isChefAssigned(user)]
+--
+
+-.
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>316</x><y>248</y><w>248</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+throw UnauthorizedException</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Relation</id><coordinates><x>556</x><y>352</y><w>208</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.currentSummarySheet = service
+</panel_attributes><additional_attributes>10;60;50;60;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>316</x><y>400</y><w>248</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+currentSummarySheet</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Relation</id><coordinates><x>556</x><y>296</y><w>176</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.currentService = service</panel_attributes><additional_attributes>10;60;50;60;50;10;10;10</additional_attributes></element></diagram>

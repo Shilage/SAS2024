@@ -1,0 +1,49 @@
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLPackage</id><coordinates><x>505</x><y>175</y><w>45</w><h>35</h></coordinates><panel_attributes>UI</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>590</x><y>185</y><w>145</w><h>25</h></coordinates><panel_attributes>kitchenTaskMgr:
+KitchenTaskManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>515</x><y>205</y><w>15</w><h>365</h></coordinates><panel_attributes>lt=.
+group=group-1</panel_attributes><additional_attributes>10;10;10;710</additional_attributes></element><element><id>Relation</id><coordinates><x>515</x><y>220</y><w>155</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+addCookingProcedure (procedure)</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>205</y><w>15</w><h>365</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;710</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>660</x><y>225</y><w>10</w><h>320</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>405</x><y>260</y><w>670</w><h>300</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+--
+
+
+-.
+
+
+
+
+-.
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>515</x><y>295</y><w>155</w><h>20</h></coordinates><panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Text</id><coordinates><x>415</x><y>295</y><w>90</w><h>20</h></coordinates><panel_attributes>fg=#761C8C
+[kitchenTaskMgr.getCurrentSummarySheet() == null]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>735</x><y>285</y><w>120</w><h>25</h></coordinates><panel_attributes>
+currentSheet: SummarySheet</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>305</y><w>15</w><h>150</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;280</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>790</x><y>335</y><w>10</w><h>105</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>665</x><y>325</y><w>135</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+addProcedure (procedure)</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>795</x><y>415</y><w>135</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+add (orderedProcedure)</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>860</x><y>380</y><w>120</w><h>25</h></coordinates><panel_attributes>currentSheet.listedProcedures:
+	ArrayList&lt;OrderedProcedure&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>915</x><y>400</y><w>15</w><h>45</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>915</x><y>425</y><w>10</w><h>10</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>515</x><y>535</y><w>155</w><h>20</h></coordinates><panel_attributes>lt=&lt;.
+ok</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1005</x><y>185</y><w>95</w><h>25</h></coordinates><panel_attributes>er:
+MenuEventReceiver
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1050</x><y>205</y><w>15</w><h>365</h></coordinates><panel_attributes>lt=.
+</panel_attributes><additional_attributes>10;10;10;710</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1050</x><y>515</y><w>10</w><h>10</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>505</y><w>390</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+updateCookingProcedureAdded (kitchenTaskMgr.currentSummarySheet(), orderedProcedure)</panel_attributes><additional_attributes>760;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>595</x><y>490</y><w>475</w><h>45</h></coordinates><panel_attributes>for each
+er in 
+eventReceivers
+fg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>665</x><y>485</y><w>10</w><h>50</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>665</x><y>455</y><w>175</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+notifyCookingProcedureAdded(orderedProcedure)</panel_attributes><additional_attributes>20;60;50;60;50;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>750</x><y>185</y><w>140</w><h>25</h></coordinates><panel_attributes>userMgr:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>815</x><y>205</y><w>15</w><h>75</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>815</x><y>240</y><w>10</w><h>15</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>665</x><y>230</y><w>160</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getCurrentUser( )</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>665</x><y>245</y><w>160</w><h>20</h></coordinates><panel_attributes>lt=&lt;.
+user</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element><element><id>Relation</id><coordinates><x>515</x><y>265</y><w>155</w><h>20</h></coordinates><panel_attributes>lt=&lt;.
+throw UnathorizedException</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Text</id><coordinates><x>415</x><y>260</y><w>105</w><h>25</h></coordinates><panel_attributes>fg=#761C8C
+[!user.isChef() || 
+!getCurrentService.
+isChefAssigned(user)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>795</x><y>335</y><w>160</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create (procedure, listedProcedures.size())</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>910</x><y>285</y><w>80</w><h>25</h></coordinates><panel_attributes>orderedProcedure:
+ OrderedProcedure</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>795</x><y>350</y><w>160</w><h>20</h></coordinates><panel_attributes>lt=&lt;.
+orderedProcedure</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element><element><id>Relation</id><coordinates><x>945</x><y>305</y><w>15</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>945</x><y>345</y><w>10</w><h>15</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>665</x><y>430</y><w>135</w><h>20</h></coordinates><panel_attributes>lt=&lt;.
+orderedProcedure</panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element></diagram>

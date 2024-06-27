@@ -1,0 +1,63 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><element><id>UMLPackage</id><coordinates><x>238</x><y>77</y><w>63</w><h>49</h></coordinates><panel_attributes>UI</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>259</x><y>119</y><w>21</w><h>602</h></coordinates><panel_attributes>lt=.
+group=group-0</panel_attributes><additional_attributes>10;10;10;840</additional_attributes></element><element><id>Relation</id><coordinates><x>259</x><y>140</y><w>217</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+deleteTask (task) </panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>399</x><y>91</y><w>140</w><h>35</h></coordinates><panel_attributes>kitchenTaskMgr:
+KitchenTaskManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>462</x><y>119</y><w>21</w><h>609</h></coordinates><panel_attributes>lt=.
+group=group-1</panel_attributes><additional_attributes>10;10;10;850</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>462</x><y>154</y><w>14</w><h>546</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>98</x><y>196</y><w>1029</w><h>511</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+--
+
+
+
+-.
+
+
+
+
+-.
+
+
+
+
+-.
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>112</x><y>252</y><w>126</w><h>28</h></coordinates><panel_attributes>fg=#761C8C
+[kitchenTaskMgr.getCurrentSummarySheet() == null]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>259</x><y>252</y><w>217</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Text</id><coordinates><x>112</x><y>294</y><w>126</w><h>28</h></coordinates><panel_attributes>fg=#761C8C
+[!currentSummarySheet.getListedTasks.contains(task)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>259</x><y>294</y><w>217</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>875</x><y>651</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>476</x><y>637</y><w>413</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+updateTaskDeleted (getCurrentSummarySheet(), task)</panel_attributes><additional_attributes>570;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>371</x><y>616</y><w>532</w><h>63</h></coordinates><panel_attributes>for each
+er in 
+eventReceivers
+fg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>469</x><y>609</y><w>14</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>469</x><y>567</y><w>140</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+notifyTaskDeleted(task)</panel_attributes><additional_attributes>20;60;50;60;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>875</x><y>588</y><w>21</w><h>133</h></coordinates><panel_attributes>lt=.
+</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>812</x><y>560</y><w>133</w><h>35</h></coordinates><panel_attributes>er:
+MenuEventReceiver
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>42</y><w>196</w><h>35</h></coordinates><panel_attributes>userMgr:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>70</y><w>21</w><h>154</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>595</x><y>168</y><w>14</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>469</x><y>154</y><w>140</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getCurrentUser( )</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>469</x><y>175</y><w>140</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+user</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>259</x><y>210</y><w>217</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+throw UnathorizedException</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Text</id><coordinates><x>112</x><y>203</y><w>147</w><h>35</h></coordinates><panel_attributes>fg=#761C8C
+[!user.isChef() || 
+!getCurrentService.
+isChefAssigned(user)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>637</x><y>0</y><w>140</w><h>35</h></coordinates><panel_attributes>currentSummarySheet:
+SummarySheet</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>28</y><w>21</w><h>546</h></coordinates><panel_attributes>lt=.
+group=group-2</panel_attributes><additional_attributes>10;10;10;760</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>700</x><y>350</y><w>14</w><h>196</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>469</x><y>336</y><w>245</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+deleteTask(task)</panel_attributes><additional_attributes>330;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>707</x><y>378</y><w>196</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create(task.getProcedure(),
+ this.listedProcedures.size())</panel_attributes><additional_attributes>260;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>826</x><y>336</y><w>140</w><h>35</h></coordinates><panel_attributes>orderedProcedure:
+OrderedProcedure</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>889</x><y>364</y><w>21</w><h>91</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>889</x><y>392</y><w>14</w><h>35</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>707</x><y>413</y><w>196</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+orderedProcedure</panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>910</x><y>0</y><w>140</w><h>35</h></coordinates><panel_attributes>listedProcedures:
+ArrayList&lt;OrderedProcedure&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>973</x><y>28</y><w>21</w><h>483</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;670</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>973</x><y>462</y><w>14</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>707</x><y>448</y><w>280</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+add(orderedProcedure)</panel_attributes><additional_attributes>380;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>469</x><y>532</y><w>245</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+ok</panel_attributes><additional_attributes>10;20;330;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>994</x><y>49</y><w>140</w><h>35</h></coordinates><panel_attributes>
+tasks: ArrayList&lt;Task&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1057</x><y>77</y><w>21</w><h>497</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;690</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1057</x><y>525</y><w>14</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>707</x><y>511</y><w>364</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+remove(task)</panel_attributes><additional_attributes>500;20;10;20</additional_attributes></element></diagram>
