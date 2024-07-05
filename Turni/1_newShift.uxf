@@ -1,0 +1,145 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>--
+</help_text><element><id>Relation</id><coordinates><x>168</x><y>42</y><w>28</w><h>2023</h></coordinates><panel_attributes>lt=.
+group=group-0</panel_attributes><additional_attributes>20;10;10;2870</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>161</x><y>0</y><w>63</w><h>49</h></coordinates><panel_attributes>UI</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>175</x><y>63</y><w>217</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+newShift (service, type)</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>280</x><y>14</y><w>203</w><h>35</h></coordinates><panel_attributes>shiftBoardMgr:
+ShiftBoardManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>42</y><w>21</w><h>1869</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;2650</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>378</x><y>70</y><w>14</w><h>1778</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>14</y><w>196</w><h>35</h></coordinates><panel_attributes>userMgr:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>42</y><w>21</w><h>84</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>595</x><y>91</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>77</y><w>224</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getCurrentUser( )</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>91</y><w>224</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+user</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>21</x><y>322</y><w>1197</w><h>1652</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+
+
+--
+
+
+-.
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>0</x><y>126</y><w>210</w><h>28</h></coordinates><panel_attributes>fg=#761C8C
+[!user.isEventPlanner() || 
+!service.isOwnedBy(user)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>273</x><y>273</y><w>84</w><h>28</h></coordinates><panel_attributes>fg=#761C8C
+[type == "service"]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>595</x><y>217</y><w>133</w><h>35</h></coordinates><panel_attributes>shift:
+ServiceShift
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>651</x><y>245</y><w>21</w><h>175</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;230</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>651</x><y>280</y><w>14</w><h>112</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>266</y><w>287</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>390;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>287</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>287</y><w>77</w><h>28</h></coordinates><panel_attributes>startDateTime:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>322</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>322</y><w>77</w><h>28</h></coordinates><panel_attributes>startDateTime:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>357</y><w>91</w><h>28</h></coordinates><panel_attributes>	lastAvailabilityDate:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>357</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>238</x><y>266</y><w>644</w><h>399</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-.
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>378</y><w>280</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+shift</panel_attributes><additional_attributes>10;20;380;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>651</x><y>490</y><w>14</w><h>168</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>476</y><w>287</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>390;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>497</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>497</y><w>77</w><h>28</h></coordinates><panel_attributes>startDateTime:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>532</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>532</y><w>77</w><h>28</h></coordinates><panel_attributes>startDateTime:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>567</y><w>91</w><h>28</h></coordinates><panel_attributes>lastAvailabilityDate:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>567</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>644</y><w>280</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+shift</panel_attributes><additional_attributes>10;20;380;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>595</x><y>441</y><w>133</w><h>35</h></coordinates><panel_attributes>shift:
+KitchenShift
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>651</x><y>469</y><w>21</w><h>217</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;290</additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>602</y><w>147</w><h>56</h></coordinates><panel_attributes>lt=&lt;-
+this.kitchenLocation = ""</panel_attributes><additional_attributes>10;60;50;60;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>700</y><w>154</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.shfits.add(shift)</panel_attributes><additional_attributes>10;80;90;80;90;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>945</x><y>889</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>945</x><y>238</y><w>21</w><h>679</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;950</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>889</x><y>217</y><w>126</w><h>28</h></coordinates><panel_attributes>service: Service</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>875</y><w>574</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+addShift (shift)</panel_attributes><additional_attributes>800;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>266</x><y>1022</y><w>889</w><h>721</h></coordinates><panel_attributes>LOOP for all serviceR in recurrentServices
+--
+fg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1085</x><y>966</y><w>14</w><h>35</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1085</x><y>238</y><w>21</w><h>798</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1120</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1029</x><y>217</y><w>126</w><h>28</h></coordinates><panel_attributes>eventMgr: EventManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>952</y><w>714</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getRecurrentServices (service)</panel_attributes><additional_attributes>1000;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>987</y><w>714</w><h>28</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;
+recurrentServices</panel_attributes><additional_attributes>1000;20;10;20</additional_attributes></element><element><id>Text</id><coordinates><x>273</x><y>1071</y><w>84</w><h>28</h></coordinates><panel_attributes>fg=#761C8C
+[type == "service"]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>595</x><y>1071</y><w>133</w><h>35</h></coordinates><panel_attributes>shift:
+ServiceShift
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>651</x><y>1106</y><w>21</w><h>175</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;230</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>651</x><y>1141</y><w>14</w><h>112</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>1127</y><w>287</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>390;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>1148</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>1148</y><w>77</w><h>28</h></coordinates><panel_attributes>startDateTime:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>1183</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>1183</y><w>77</w><h>28</h></coordinates><panel_attributes>startDateTime:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>1218</y><w>91</w><h>28</h></coordinates><panel_attributes>lastAvailabilityDate:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>1218</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>217</x><y>1057</y><w>651</w><h>637</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+--
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+-.
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>1239</y><w>280</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+recurrentShift</panel_attributes><additional_attributes>10;20;380;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>651</x><y>1351</y><w>14</w><h>168</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>1337</y><w>287</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>390;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>1358</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>1358</y><w>77</w><h>28</h></coordinates><panel_attributes>startDateTime:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>1393</y><w>77</w><h>28</h></coordinates><panel_attributes>startDateTime:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>756</x><y>1428</y><w>91</w><h>28</h></coordinates><panel_attributes>lastAvailabilityDate:
+java.util.Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>1428</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>1505</y><w>280</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+recurrentShift</panel_attributes><additional_attributes>10;20;380;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>595</x><y>1302</y><w>133</w><h>35</h></coordinates><panel_attributes>shift:
+KitchenShift
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>651</x><y>1330</y><w>21</w><h>231</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;310</additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>1463</y><w>147</w><h>56</h></coordinates><panel_attributes>lt=&lt;-
+this.kitchenLocation = ""</panel_attributes><additional_attributes>10;60;50;60;50;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>945</x><y>1652</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>889</x><y>1078</y><w>126</w><h>28</h></coordinates><panel_attributes>serviceR: Service</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>1638</y><w>574</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+addShift (recurrentShift)</panel_attributes><additional_attributes>800;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>945</x><y>1099</y><w>21</w><h>588</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;820</additional_attributes></element><element><id>Relation</id><coordinates><x>175</x><y>147</y><w>217</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+Throw UnauthorizedException	</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>385</x><y>756</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>1554</y><w>189</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.shfits.add(recurrentShift)</panel_attributes><additional_attributes>10;80;90;80;90;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>385</x><y>1610</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>280</x><y>1078</y><w>84</w><h>28</h></coordinates><panel_attributes>fg=#761C8C
+[type == "service"]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>1393</y><w>112</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>791</y><w>175</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.setCreatedShift(shift)</panel_attributes><additional_attributes>10;80;90;80;90;10;10;10</additional_attributes></element></diagram>

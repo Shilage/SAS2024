@@ -1,0 +1,79 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram not	es</help_text><element><id>UMLPackage</id><coordinates><x>387</x><y>0</y><w>81</w><h>63</h></coordinates><panel_attributes>UI</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>54</y><w>27</w><h>1602</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1760</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>675</x><y>18</y><w>261</w><h>45</h></coordinates><panel_attributes>shiftBoardMgr:
+ShiftBoardManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>801</x><y>90</y><w>18</w><h>1566</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>801</x><y>54</y><w>27</w><h>1413</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1550</additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>108</y><w>405</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+groupShifts(shifts: ArrayList&lt;Shift&gt;, lastAvailabilityDate:java.util.Date)</panel_attributes><additional_attributes>430;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>306</x><y>765</y><w>1395</w><h>360</h></coordinates><panel_attributes>LOOP for all shift in shifts
+--
+fg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>441</x><y>810</y><w>270</w><h>36</h></coordinates><panel_attributes>fg=#761C8C
+[!user.isEventPlanner() || 
+!eventMgr.getService(shift).isOwnedBy(user)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>378</x><y>792</y><w>1278</w><h>297</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+--
+
+
+
+
+
+-.
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>855</y><w>405</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+Throw UnauthorizedException	</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1197</x><y>18</y><w>171</w><h>45</h></coordinates><panel_attributes>group:
+Group
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1269</x><y>63</y><w>27</w><h>981</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1070</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1269</x><y>207</y><w>18</w><h>144</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>189</y><w>477</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+create()</panel_attributes><additional_attributes>510;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>333</y><w>477</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+group</panel_attributes><additional_attributes>10;20;510;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1566</x><y>225</y><w>99</w><h>36</h></coordinates><panel_attributes>shiftsGrouped: 
+Set&lt;Shift&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1278</x><y>225</y><w>306</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes><additional_attributes>320;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1278</x><y>279</y><w>288</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.lastAvailabilityDate = lastAvailabilityDate</panel_attributes><additional_attributes>10;50;50;50;50;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1269</x><y>936</y><w>18</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>918</y><w>477</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+addShift(shift)</panel_attributes><additional_attributes>510;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1602</x><y>252</y><w>27</w><h>774</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;840</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1602</x><y>981</y><w>18</w><h>27</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1278</x><y>963</y><w>342</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+add(shift)</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>1170</y><w>198</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.groups.add(group)</panel_attributes><additional_attributes>10;80;70;80;70;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>810</x><y>1242</y><w>18</w><h>27</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>963</x><y>18</y><w>189</w><h>45</h></coordinates><panel_attributes>userMgr:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1044</x><y>117</y><w>18</w><h>18</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>99</y><w>252</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getCurrentUser( )</panel_attributes><additional_attributes>260;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>117</y><w>252</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+user</panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1044</x><y>54</y><w>27</w><h>108</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>1296</y><w>216</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+noftifyGroupAdded(group)</panel_attributes><additional_attributes>10;80;70;80;70;10;10;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>603</x><y>1386</y><w>711</w><h>72</h></coordinates><panel_attributes>LOOP for all er in eventReceivers
+fg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>810</x><y>1368</y><w>18</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>819</x><y>1413</y><w>468</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;
+updateGroupAdded(group)</panel_attributes><additional_attributes>10;20;500;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1269</x><y>1431</y><w>18</w><h>18</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1197</x><y>1305</y><w>171</w><h>45</h></coordinates><panel_attributes>er:
+ShiftEventManager	
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1269</x><y>1341</y><w>27</w><h>144</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>261</x><y>441</y><w>1485</w><h>1197</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+--
+
+
+
+
+
+-.
+
+
+
+
+
+
+
+
+
+
+-.
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>297</x><y>450</y><w>270</w><h>36</h></coordinates><panel_attributes>fg=#761C8C
+[!eventMgr.belongToSameEvent(shifts)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>477</y><w>405</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+Throw UseCaseLogicEcxeption	</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>585</y><w>405</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+Throw UseCaseLogicEcxeption	</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Text</id><coordinates><x>297</x><y>549</y><w>297</w><h>36</h></coordinates><panel_attributes>fg=#761C8C
+[shifs.stream().map(Shift::getType).distinct().count() == 1]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element></diagram>

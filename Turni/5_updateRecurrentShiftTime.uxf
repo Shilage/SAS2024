@@ -1,0 +1,52 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><element><id>UMLPackage</id><coordinates><x>70</x><y>0</y><w>63</w><h>49</h></coordinates><panel_attributes>UI</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>63</x><y>287</y><w>210</w><h>28</h></coordinates><panel_attributes>fg=#761C8C
+[!user.isEventPlanner() || 
+!service.isOwnedBy(user)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>91</x><y>49</y><w>21</w><h>770</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1080</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>35</x><y>280</y><w>910</w><h>483</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+--
+
+
+
+
+
+-.
+
+
+
+
+
+
+
+
+-.
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>266</x><y>14</y><w>203</w><h>35</h></coordinates><panel_attributes>shiftBoardMgr:
+ShiftBoardManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>364</x><y>70</y><w>14</w><h>798</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>364</x><y>42</y><w>21</w><h>861</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1210</additional_attributes></element><element><id>Relation</id><coordinates><x>91</x><y>84</y><w>287</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+updateRecurrentShiftTime()</panel_attributes><additional_attributes>390;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>560</x><y>203</y><w>14</w><h>35</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>175</y><w>21</w><h>98</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>154</y><w>126</w><h>28</h></coordinates><panel_attributes>eventMgr: EventManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>189</y><w>203</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getService (shift)</panel_attributes><additional_attributes>270;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>224</y><w>203</w><h>28</h></coordinates><panel_attributes>lt=.&gt;&gt;&gt;
+service</panel_attributes><additional_attributes>270;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>0</x><y>133</y><w>994</w><h>651</h></coordinates><panel_attributes>LOOP for all shift in currentUpdatingShift
+--
+fg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>56</x><y>364</y><w>140</w><h>28</h></coordinates><panel_attributes>fg=#761C8C
+[service.isShiftOverlapping(shift)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>91</x><y>399</y><w>287</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+Throw OverlappingShiftException	</panel_attributes><additional_attributes>10;20;390;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>126</x><y>448</y><w>721</w><h>273</h></coordinates><panel_attributes>LOOP for all recurrentShift in service.getRecurrentShifts(shift)
+--
+fg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>490</x><y>469</y><w>196</w><h>35</h></coordinates><panel_attributes>recurrentShift:
+Shift
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>581</x><y>532</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>518</y><w>224</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setStartDate(startDateTime)</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>581</x><y>560</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>546</y><w>224</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setEndDate(endDateTime)</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>581</x><y>497</y><w>21</w><h>238</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;320</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>602</y><w>210</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+notifyShiftChanged(recurrentShift)</panel_attributes><additional_attributes>10;60;90;60;90;10;10;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>210</x><y>658</y><w>609</w><h>56</h></coordinates><panel_attributes>LOOP for all er in eventReceivers
+fg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>371</x><y>644</y><w>14</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>679</y><w>434</w><h>28</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;
+updateShiftChanged(recurrentShift)</panel_attributes><additional_attributes>10;20;600;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>798</x><y>693</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>798</x><y>42</y><w>21</w><h>686</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;960</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>707</x><y>14</y><w>196</w><h>35</h></coordinates><panel_attributes>userMgr:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>91</x><y>315</y><w>287</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+Throw UnauthorizedException	</panel_attributes><additional_attributes>10;20;390;20</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>791</y><w>210</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.currentUpdatingShifts.clear()</panel_attributes><additional_attributes>10;80;90;80;90;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>371</x><y>847</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,0 +1,47 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLPackage</id><coordinates><x>80</x><y>0</y><w>72</w><h>56</h></coordinates><panel_attributes>UI</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>72</x><y>192</y><w>240</w><h>32</h></coordinates><panel_attributes>fg=#761C8C
+[!user.isEventPlanner() || 
+!eventMgr.getService(shift).isOwnedBy(user)]]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>104</x><y>56</y><w>24</w><h>656</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;800</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>40</x><y>184</y><w>1040</w><h>440</h></coordinates><panel_attributes>alt 
+fg=#761C8C
+--
+
+
+
+
+-.
+
+
+
+
+
+-.
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>304</x><y>16</y><w>232</w><h>40</h></coordinates><panel_attributes>shiftBoardMgr:
+ShiftBoardManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>416</x><y>80</y><w>16</w><h>688</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>416</x><y>48</y><w>24</w><h>744</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;910</additional_attributes></element><element><id>Relation</id><coordinates><x>104</x><y>64</y><w>328</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+changeShiftTime(shifts: List&lt;Shift&gt;, startDateTime, endDateTime)</panel_attributes><additional_attributes>390;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>0</x><y>152</y><w>1136</w><h>496</h></coordinates><panel_attributes>LOOP for all shift in shifts
+--
+fg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>72</x><y>248</y><w>160</w><h>32</h></coordinates><panel_attributes>fg=#761C8C
+[service.isShiftOverlapping(shift)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>104</x><y>280</y><w>328</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+Throw OverlappingShiftException	</panel_attributes><additional_attributes>10;20;390;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>560</x><y>320</y><w>224</w><h>40</h></coordinates><panel_attributes>shift:
+Shift
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>664</x><y>400</y><w>16</w><h>16</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>424</x><y>384</y><w>256</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setStartDate(startDateTime)</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>664</x><y>432</y><w>16</w><h>16</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>424</x><y>416</y><w>256</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setEndDate(endDateTime)</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>664</x><y>352</y><w>24</w><h>120</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>424</x><y>448</y><w>200</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+notifyShiftChanged(shift)</panel_attributes><additional_attributes>10;60;90;60;90;10;10;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>240</x><y>512</y><w>696</w><h>64</h></coordinates><panel_attributes>LOOP for all er in eventReceivers
+fg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>424</x><y>496</y><w>16</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>536</y><w>496</w><h>32</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;
+updateShiftChanged(shift)</panel_attributes><additional_attributes>10;20;600;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>912</x><y>552</y><w>16</w><h>16</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>912</x><y>48</y><w>24</w><h>568</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;690</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>808</x><y>16</y><w>224</w><h>40</h></coordinates><panel_attributes>userMgr:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>560</x><y>16</y><w>224</w><h>40</h></coordinates><panel_attributes>userMgr:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>664</x><y>104</y><w>16</w><h>16</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>424</x><y>88</y><w>256</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getCurrentUser( )</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>424</x><y>104</y><w>256</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+user</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element><element><id>Relation</id><coordinates><x>664</x><y>48</y><w>24</w><h>104</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>104</x><y>224</y><w>328</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+Throw UnauthorizedException	</panel_attributes><additional_attributes>10;20;390;20</additional_attributes></element><element><id>Relation</id><coordinates><x>424</x><y>656</y><w>232</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setCurrentUpdatingShifts(shifts)</panel_attributes><additional_attributes>10;90;90;90;90;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>424</x><y>728</y><w>16</w><h>16</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element></diagram>
