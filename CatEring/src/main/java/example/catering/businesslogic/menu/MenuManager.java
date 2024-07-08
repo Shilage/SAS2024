@@ -1,10 +1,10 @@
 package example.catering.businesslogic.menu;
 
-import catering.businesslogic.CatERing;
-import catering.businesslogic.errors.UseCaseLogicException;
-import catering.businesslogic.procedure.CookingProcedure;
-import catering.businesslogic.procedure.Recipe;
-import catering.businesslogic.user.User;
+import example.catering.businesslogic.CatERing;
+import example.catering.businesslogic.errors.UseCaseLogicException;
+import example.catering.businesslogic.procedure.CookingProcedure;
+import example.catering.businesslogic.procedure.Recipe;
+import example.catering.businesslogic.user.User;
 
 import java.util.ArrayList;
 

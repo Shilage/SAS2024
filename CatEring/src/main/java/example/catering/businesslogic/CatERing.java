@@ -1,13 +1,13 @@
 package example.catering.businesslogic;
 
-import catering.businesslogic.event.EventManager;
-import catering.businesslogic.menu.MenuManager;
-import catering.businesslogic.procedure.CookingProcedureManager;
-import catering.businesslogic.shifts.ShiftManager;
-import catering.businesslogic.task.KitchenTaskManager;
-import catering.businesslogic.user.UserManager;
-import catering.persistence.KitchenTaskPersistence;
-import catering.persistence.MenuPersistence;
+import example.catering.businesslogic.event.EventManager;
+import example.catering.businesslogic.menu.MenuManager;
+import example.catering.businesslogic.procedure.CookingProcedureManager;
+import example.catering.businesslogic.shifts.ShiftManager;
+import example.catering.businesslogic.task.KitchenTaskManager;
+import example.catering.businesslogic.user.UserManager;
+import example.catering.persistence.KitchenTaskPersistence;
+import example.catering.persistence.MenuPersistence;
 
 public class CatERing {
     private static CatERing singleInstance;

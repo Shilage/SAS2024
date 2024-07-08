@@ -1,7 +1,7 @@
 package example.catering.businesslogic.shifts;
 
-import catering.businesslogic.event.Service;
-import catering.businesslogic.user.User;
+import example.catering.businesslogic.event.Service;
+import example.catering.businesslogic.user.User;
 
 import java.util.ArrayList;
 

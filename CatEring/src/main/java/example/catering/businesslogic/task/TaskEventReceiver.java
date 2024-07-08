@@ -1,6 +1,6 @@
 package example.catering.businesslogic.task;
 
-import catering.businesslogic.procedure.OrderedProcedure;
+import example.catering.businesslogic.procedure.OrderedProcedure;
 
 public interface TaskEventReceiver {
     void updateSummarySheetCreated(SummarySheet sheet);

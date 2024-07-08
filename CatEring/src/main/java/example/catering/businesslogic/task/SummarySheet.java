@@ -1,13 +1,13 @@
 package example.catering.businesslogic.task;
 
-import catering.businesslogic.errors.ItemNotFoundException;
-import catering.businesslogic.errors.UseCaseLogicException;
-import catering.businesslogic.procedure.CookingProcedure;
-import catering.businesslogic.procedure.OrderedProcedure;
-import catering.businesslogic.procedure.Recipe;
-import catering.businesslogic.shifts.KitchenShift;
-import catering.businesslogic.user.User;
-import catering.persistence.PersistenceManager;
+import example.catering.businesslogic.errors.ItemNotFoundException;
+import example.catering.businesslogic.errors.UseCaseLogicException;
+import example.catering.businesslogic.procedure.CookingProcedure;
+import example.catering.businesslogic.procedure.OrderedProcedure;
+import example.catering.businesslogic.procedure.Recipe;
+import example.catering.businesslogic.shifts.KitchenShift;
+import example.catering.businesslogic.user.User;
+import example.catering.persistence.PersistenceManager;
 
 import java.time.Duration;
 import java.util.ArrayList;

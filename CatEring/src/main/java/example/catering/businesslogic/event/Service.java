@@ -1,10 +1,10 @@
 package example.catering.businesslogic.event;
 
-import catering.businesslogic.menu.Menu;
-import catering.businesslogic.task.SummarySheet;
-import catering.businesslogic.user.User;
-import catering.persistence.PersistenceManager;
-import catering.persistence.ResultHandler;
+import example.catering.businesslogic.menu.Menu;
+import example.catering.businesslogic.task.SummarySheet;
+import example.catering.businesslogic.user.User;
+import example.catering.persistence.PersistenceManager;
+import example.catering.persistence.ResultHandler;
 
 import java.util.ArrayList;
 import java.sql.Date;

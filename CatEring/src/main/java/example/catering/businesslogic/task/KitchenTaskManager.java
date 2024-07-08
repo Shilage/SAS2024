@@ -1,15 +1,15 @@
 package example.catering.businesslogic.task;
 
-import catering.businesslogic.CatERing;
-import catering.businesslogic.errors.ItemNotFoundException;
-import catering.businesslogic.errors.UnauthorizedException;
-import catering.businesslogic.errors.UseCaseLogicException;
-import catering.businesslogic.event.Service;
-import catering.businesslogic.procedure.CookingProcedure;
-import catering.businesslogic.procedure.OrderedProcedure;
-import catering.businesslogic.shifts.KitchenShift;
-import catering.businesslogic.shifts.Shift;
-import catering.businesslogic.user.User;
+import example.catering.businesslogic.CatERing;
+import example.catering.businesslogic.errors.ItemNotFoundException;
+import example.catering.businesslogic.errors.UnauthorizedException;
+import example.catering.businesslogic.errors.UseCaseLogicException;
+import example.catering.businesslogic.event.Service;
+import example.catering.businesslogic.procedure.CookingProcedure;
+import example.catering.businesslogic.procedure.OrderedProcedure;
+import example.catering.businesslogic.shifts.KitchenShift;
+import example.catering.businesslogic.shifts.Shift;
+import example.catering.businesslogic.user.User;
 
 import java.time.Duration;
 import java.util.ArrayList;

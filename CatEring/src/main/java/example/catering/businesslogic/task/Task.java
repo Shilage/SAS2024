@@ -1,11 +1,11 @@
 package example.catering.businesslogic.task;
 
-import catering.businesslogic.procedure.CookingProcedure;
-import catering.businesslogic.procedure.Preparation;
-import catering.businesslogic.procedure.Recipe;
-import catering.businesslogic.shifts.KitchenShift;
-import catering.businesslogic.user.User;
-import catering.persistence.PersistenceManager;
+import example.catering.businesslogic.procedure.CookingProcedure;
+import example.catering.businesslogic.procedure.Preparation;
+import example.catering.businesslogic.procedure.Recipe;
+import example.catering.businesslogic.shifts.KitchenShift;
+import example.catering.businesslogic.user.User;
+import example.catering.persistence.PersistenceManager;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

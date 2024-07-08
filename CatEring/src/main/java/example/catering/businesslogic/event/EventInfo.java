@@ -6,9 +6,9 @@ import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import catering.businesslogic.user.User;
-import catering.persistence.PersistenceManager;
-import catering.persistence.ResultHandler;
+import example.catering.businesslogic.user.User;
+import example.catering.persistence.PersistenceManager;
+import example.catering.persistence.ResultHandler;
 
 public class EventInfo {
     private int id;

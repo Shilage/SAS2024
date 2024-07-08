@@ -1,12 +1,12 @@
 package example.catering.businesslogic.menu;
 
-import catering.businesslogic.CatERing;
-import catering.businesslogic.procedure.CookingProcedure;
-import catering.businesslogic.procedure.Recipe;
-import catering.businesslogic.user.User;
-import catering.persistence.BatchUpdateHandler;
-import catering.persistence.PersistenceManager;
-import catering.persistence.ResultHandler;
+import example.catering.businesslogic.CatERing;
+import example.catering.businesslogic.procedure.CookingProcedure;
+import example.catering.businesslogic.procedure.Recipe;
+import example.catering.businesslogic.user.User;
+import example.catering.persistence.BatchUpdateHandler;
+import example.catering.persistence.PersistenceManager;
+import example.catering.persistence.ResultHandler;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

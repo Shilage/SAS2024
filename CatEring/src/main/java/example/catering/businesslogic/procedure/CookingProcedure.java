@@ -1,6 +1,6 @@
 package example.catering.businesslogic.procedure;
 
-import catering.persistence.PersistenceManager;
+import example.catering.persistence.PersistenceManager;
 
 import java.util.ArrayList;
 import java.util.Comparator;

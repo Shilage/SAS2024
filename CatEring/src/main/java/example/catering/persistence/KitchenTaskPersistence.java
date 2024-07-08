@@ -1,9 +1,9 @@
 package example.catering.persistence;
 
-import catering.businesslogic.procedure.OrderedProcedure;
-import catering.businesslogic.task.SummarySheet;
-import catering.businesslogic.task.Task;
-import catering.businesslogic.task.TaskEventReceiver;
+import example.catering.businesslogic.procedure.OrderedProcedure;
+import example.catering.businesslogic.task.SummarySheet;
+import example.catering.businesslogic.task.Task;
+import example.catering.businesslogic.task.TaskEventReceiver;
 
 public class KitchenTaskPersistence implements TaskEventReceiver {
     @Override

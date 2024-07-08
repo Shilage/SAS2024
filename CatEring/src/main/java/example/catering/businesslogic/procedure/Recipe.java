@@ -1,7 +1,7 @@
 package example.catering.businesslogic.procedure;
 
-import catering.persistence.PersistenceManager;
-import catering.persistence.ResultHandler;
+import example.catering.persistence.PersistenceManager;
+import example.catering.persistence.ResultHandler;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
